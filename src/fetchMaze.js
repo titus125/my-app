@@ -1,6 +1,6 @@
 export default function fetch_maze(maze_radius=5, centreX=0, centreY=0, 
   branch_factor=0.5, seed=Math.floor(Math.random() * 10000) + 1, boardOnly=0, colored=1) {
-  const url = 'https://titus125.pythonanywhere.com/generate_image';
+  const url = 'https://titus125.pythonanywhere.com/generate_image'; // https secure
 
   const mazeParams = new URLSearchParams({
     maze_radius: maze_radius,

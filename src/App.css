@@ -140,6 +140,12 @@ button {
   background-color: #3e8e41;
 }
 
-.button2:hover {
+.button2:not([disabled]):hover {
   background-color: #3719e0;
+}
+
+button.disabled {
+  background-color: rgb(179, 178, 178);
+  color: white;
+  cursor: not-allowed;
 }
